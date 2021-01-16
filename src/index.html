@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-xl-2 col-lg-3 col-md-3 col-sm-3 col-3">
+                <aside class="menu">
+                    <a class="logo" href="#">
+                        <h1>F.</h1>
+                    </a>
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">
+                            <img src="images/icons/sidebar/home.svg" alt="">  
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                              <img src="images/icons/sidebar/education.svg" alt="">  
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                              <img src="images/icons/sidebar/person.svg" alt="">  
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                              <img src="images/icons/sidebar/mail.svg" alt="">  
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                              <img src="images/icons/sidebar/settings.svg" alt="">  
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link exit" href="#">
+                              <img src="images/icons/sidebar/exit.svg" alt="">  
+                            </a>
+                          </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="container-fluid wrapper-column first col-xl-5 col-lg-9 col-md-9 col-sm-9 col-9">
+                <div class="row">
+                    <section class="header col-lg-12 col-md-12 col-12">
+                        <div class="header-text col-6">
+                            <h5>Hello Josh!</h5>
+                            <p>It's good to see you again.</p>
+                        </div>
+                        <div class="header-image col-6">
+                            <img src="images/header-image.svg" alt="hello">
+                        </div>
+                    </section>
+                </div>
+                <div class="row ">
+                    <section class="course ">
+                        <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                   <div class="course-info ">
+                                        <div class="course-info-icon">
+                                            <img src="images/icons/courses/spanish.svg" alt="Course icon">
+                                        </div>
+                                        <div class="course-info-descr">
+                                            <p class="headline-text">Spanish B2</p>
+                                            <p class="sub-headline">by Alejandro Velazquez</p>
+                                        </div>
+                                        <div class="course-info-progress">
+                                            <div class="pie p83"></div>
+                                        </div>
+                                        <button class="btn btn-black">Continue</button>
+                                    </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="course-info">
+                                    <div class="course-info-icon">
+                                        <img src="images/icons/courses/spanish.svg" alt="Course icon">
+                                    </div>
+                                    <div class="course-info-descr">
+                                        <p class="headline-text">Spanish B2</p>
+                                        <p class="sub-headline">by Alejandro Velazquez</p>
+                                    </div>
+                                    <div class="course-info-progress">
+                                        <div class="pie p83"></div>
+                                    </div>
+                                    <button class="btn btn-black">Continue</button>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </section>
+                </div>
+                <div class="row">
+                    <section class="courses-list col-lg-12">
+                        <h2 class="headline-block">Courses</h2>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active headline-text" data-toggle="tab" href="#all-courses">All Courses</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link headline-text" data-toggle="tab" href="#newest">The Newest</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link headline-text" data-toggle="tab" href="#all-courses">Top Rated</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link headline-text" data-toggle="tab" href="#all-courses">Most Popular</a>
+                              </li>
+                          </ul>
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="all-courses">
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/figma.svg" alt="Figma">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Learn Figma</p>
+                                        <p class="sub-headline">by Christopher Morgan</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">6h 30min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,9</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/photo.svg" alt="Photo">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Analog photography</p>
+                                        <p class="sub-headline">by Gordon Norman</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">3h 15min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,7</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/instagram.svg" alt="Instagram">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Master Instagram</p>
+                                        <p class="sub-headline">by Sophie Gill</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">7h 40min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,6</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/photo.svg" alt="Drawing">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Basics of drawing</p>
+                                        <p class="sub-headline">by Jean Tate</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">11h 30min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,8</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/photoshop.svg" alt="Photoshop">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Photoshop - Essence</p>
+                                        <p class="sub-headline">by David Green</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">5h 35min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,7</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="newest">
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/photo.svg" alt="Photo">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Analog photography</p>
+                                        <p class="sub-headline">by Gordon Norman</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">3h 15min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,7</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/instagram.svg" alt="Instagram">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Master Instagram</p>
+                                        <p class="sub-headline">by Sophie Gill</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">7h 40min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,6</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/photo.svg" alt="Drawing">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Basics of drawing</p>
+                                        <p class="sub-headline">by Jean Tate</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">11h 30min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,8</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                                <div class="courses-list-item">
+                                    <div class="courses-list-item-icon">
+                                        <img src="images/icons/courses/photoshop.svg" alt="Photoshop">
+                                    </div>
+                                    <div class="courses-list-item-descr">
+                                        <p class="headline-text">Photoshop - Essence</p>
+                                        <p class="sub-headline">by David Green</p>
+                                    </div>
+                                    <div class="courses-list-item-duration">
+                                        <img src="images/icons/courses/duration.svg" alt="Clock" style="margin-right: 5px;">
+                                        <p class="sub-headline">5h 35min</p>
+                                    </div>
+                                    <div class="courses-list-item-rating">
+                                        <img src="images/icons/courses/rating.svg" alt="Rating" style="margin-right: 5px;">
+                                        <p class="sub-headline">4,7</p>
+                                    </div>
+                                    <button class="btn btn-black">View course</button>
+                                </div>
+                            </div>
+                          </div>
+                        </section>
+                </div>
+            </div>
+            <div class="container-fluid wrapper-column second col-xl-5 col-lg-7 col-md-8 col-9">
+                <div class="row">
+                    <section class="navigation col-xl-12">
+                        <div class="navigation-input col-xl-8 col-lg-8 col-md-8">
+                            <img class="search" src="images/icons/search.svg" alt="search">
+                            <input type="text">
+                        </div>
+                        <div class="navigation-notification col-xl-1 col-lg-1 col-md-1">
+                            <img class="ring" src="images/icons/notification.svg" alt="Notification">
+                            <span class="counter">1</span>
+                        </div>
+                        <div class="navigation-profile col-xl-3 col-lg-3 col-md-3">
+                            <div class="dropdown">
+                                <img class="" src="images/icons/user.svg" alt="User">
+                                <span style="margin-left: 5px;">
+                                    <i class="arrow down"></i>
+                                </span>
+                                <div class="dropdown-content">
+                                  <a href="" class="sub-headline">Payments</a>
+                                  <a href="" class="sub-headline">Certificates</a>
+                                  <a href="" class="sub-headline">Settings</a>
+                                </div>
+                              </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="statistic col-lg-12">
+                        <div class="statistic-block col-6 col-lg-6">
+                            <div class="statistic-block-number">11</div>
+                            <div class="statistic-block-text">Courses Completed</div>
+                        </div>
+                        <div class="statistic-block col-6 col-lg-6">
+                            <p class="statistic-block-number">4</p>
+                            <p class="statistic-block-text">Courses in progress</p>
+                        </div> 
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="your-statistic col-lg-12">
+                        <h2 class="headline-block">Your statistics</h2>
+                        <div class="your-statistic-wrapper">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active headline-text" data-toggle="tab" href="#graph">Learning Hours</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link headline-text" data-toggle="tab" href="#graph">My Courses</a>
+                                </li>
+                            </ul>
+                            <select class="period">
+                                <option value="">Weekly</option>
+                                <option value="">Daily</option>
+                            </select>
+                        </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="graph">
+                                    <img class="graphic" style="width: 100%; height: 266px;" src="images/icons/graphic.svg" alt="Your statistic">
+                                </div>
+                            </div>
+                        </ul>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="premium col-xl-12 col-lg-12">
+                        <div class="premium-text col-7">
+                            <h2 class="headline-block">Learn even more!</h2>
+                            <p>Unlock premium features
+                                only for $9.99 per month.</p>
+                            <button class="btn btn-black">Go Premium</button>
+                        </div>
+                        <div class="premium-img col-5">
+                            <img src="images/icons/premium.svg" alt="Premium">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

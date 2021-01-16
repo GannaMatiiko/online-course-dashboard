@@ -1,0 +1,44 @@
+.statistic {
+    display: flex;
+    margin-top: 24px;
+    &-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 95px;
+        padding: 30px 35px;
+        margin-right: 10px;
+        background-color: $grey;
+        border-radius: $brad-size;
+        &-number {
+            font-family: $decor-font;
+            font-size: $big-fz;
+            margin-right: 15px;
+        }
+        &-text {
+            font-size: $main-fz;
+        }
+    }
+}
+.your-statistic {
+    margin-top: 50px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .period {
+            width: 88px;
+            height: 32px;
+            font-size: 13px;
+            border: none;
+            border-radius: 8px;
+            text-align-last: center;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .graphic {
+        margin-top: 30px;
+    }
+}

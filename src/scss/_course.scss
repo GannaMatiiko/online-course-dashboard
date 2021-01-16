@@ -1,0 +1,130 @@
+.course {
+    margin-top: 24px;
+    display: flex;
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: $grey;
+        border-radius: $brad-size;
+        padding: 8px 16px 8px 8px;
+        &-icon {
+            width: 64px;
+            height: 64px;
+            background-color: $white;
+            border-radius: 12px;
+            img {
+                margin: 16px;
+            }
+        }
+        &-descr {
+          padding: 0 23px;
+        }
+        &-progress {
+          padding-right: 30px;
+        }
+    }
+}
+
+// Bootstarp slider modification
+.active.carousel-item-left,
+.active.carousel-item-right {
+  position: absolute;
+}
+.carousel-control-prev-icon {
+  background-image: url(../images/icons/courses/back.svg);
+}
+.carousel-control-next-icon {
+  background-image: url(../images/icons/courses/forward.svg);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+}
+.carousel-control-next {
+  right: -105px;
+  @media (max-width: 1400px) {
+    right: 0;
+    bottom: -130px;
+  }
+}
+.carousel-control-prev {
+  left: 455px;
+  @media (max-width: 1400px) {
+    left: 0px;
+    bottom: -130px;
+  }
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+  width: 13%;
+  &:hover {
+    opacity: .5;
+  }
+}
+/********* Circle Pie ***********/
+$circle-diameter: 40px;
+$circle-border-width: 2px;
+$circle-background-color: $grey;
+$circle-border-color-remaining: $grey;
+$circle-border-color-elapsed: $main-color;
+
+.pie {
+  width: $circle-diameter;
+  height: $circle-diameter;
+  display: block;
+  border-radius: 50%;
+  background-color: $circle-border-color-elapsed;
+  position: relative;
+  border: none;
+  margin: 0 auto;
+
+  &:after {
+    display: none;
+  }
+
+  // Remove this if you do not need the percentage circle
+  &:after {
+    display: block;
+    position: absolute;
+    top: $circle-border-width;
+    left: $circle-border-width;
+    height: $circle-diameter - 2*$circle-border-width;
+    width:  $circle-diameter - 2*$circle-border-width;
+    line-height:  $circle-diameter - 2*$circle-border-width;
+    background: $circle-background-color;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  // loop to rotate first 50 percent
+  @for $j from 1 through 50 {
+    &.p#{$j} {
+      background-image:
+        /* 10% = 126deg = 90 + ( 360 * .1 ) */
+        linear-gradient(90deg+(360*0.01*$j), transparent 50%, $circle-border-color-remaining 50%),
+        linear-gradient(90deg, $circle-border-color-remaining 50%, transparent 50%); // remove highlight at the bottom half of the border/circle
+
+      &:after {
+        content: "#{$j}%";
+      }
+    }
+  }
+  // loop to rotate last 50 percent
+  @for $j from 51 through 100 {
+    &.p#{$j} {
+      background-image:
+        linear-gradient(90deg, transparent 50%, $circle-border-color-elapsed 50%), // highlight the right half of the border/circle
+        /* 90% = 54deg = -90 + (360*0.01*($j - 50) */
+        linear-gradient(-90deg+(360*0.01*($j - 50)), transparent 50%, $circle-border-color-remaining 50%);
+
+      &:after {
+        content: "#{$j}%";
+      }
+    }
+  }
+}
+/********* End Circle Pie ***********/

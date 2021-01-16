@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    position: relative;
+    background: $grey;
+    border-radius: $brad-size;
+    width: auto;
+    height: 160px;
+    &-text {
+        margin: 50px 0 auto 30px;
+        h5 {
+            font-family: $decor-font;
+            font-size: $secondary-fz;
+            margin-bottom: 0;
+        }
+    }
+    &-image {
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 20%;
+        }
+    }
+}

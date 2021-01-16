@@ -1,0 +1,17 @@
+.premium {
+    display: flex;
+    margin-top: 70px;
+    // width: 440px;
+    height: 193px;
+    background-color: $grey;
+    border-radius: $brad-size;
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 25px 20px;
+    }
+    &-img {
+        padding: 35px 35px 15px;
+    }
+}

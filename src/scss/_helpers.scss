@@ -1,0 +1,53 @@
+.ml-5 {
+    margin-left: 50px;
+}
+
+.btn-black {
+    width: 120px;
+    height: 40px;
+    background-color: $main-color;
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    transition: ease-in-out 0.4s;
+    &:hover {
+        color: $main-color;
+        background-color: $white;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.headline-block {
+    font-family: $decor-font;
+    font-size: 24px;
+    line-height: 38px;
+}
+.headline-text {
+    font-family: $decor-font;
+    font-size: $main-fz;
+}
+.sub-headline {
+    font-size: 13px;
+}
+
+// Tabs modification styles
+.nav-tabs {
+    border: none;
+    .nav-item {
+        margin-bottom: 0;
+    }
+    .nav-link {
+        border: none;
+        color: $main-color;
+        opacity: 30%;
+        padding: 0 30px 15px 0;
+        &.active {
+            color: $main-color;
+            opacity: 100%;
+        }
+    }
+}

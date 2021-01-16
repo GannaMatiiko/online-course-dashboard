@@ -1,0 +1,759 @@
+.ml-5 {
+  margin-left: 50px; }
+
+.btn-black {
+  width: 120px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  transition: ease-in-out 0.4s; }
+  .btn-black:hover {
+    color: #000000;
+    background-color: #ffffff; }
+  .btn-black:focus {
+    outline: none;
+    box-shadow: none; }
+
+.headline-block {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 24px;
+  line-height: 38px; }
+
+.headline-text {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 16px; }
+
+.sub-headline {
+  font-size: 13px; }
+
+.nav-tabs {
+  border: none; }
+  .nav-tabs .nav-item {
+    margin-bottom: 0; }
+  .nav-tabs .nav-link {
+    border: none;
+    color: #000000;
+    opacity: 30%;
+    padding: 0 30px 15px 0; }
+    .nav-tabs .nav-link.active {
+      color: #000000;
+      opacity: 100%; }
+
+.sidebar {
+  display: flex;
+  justify-content: center; }
+  .sidebar .menu {
+    position: relative;
+    background-color: #000000;
+    width: 132px;
+    height: 852px;
+    margin: 24px 0;
+    border-radius: 24px;
+    -webkit-box-shadow: 27px 25px 34px -7px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 27px 25px 34px -7px rgba(0, 0, 0, 0.21);
+    box-shadow: 27px 25px 34px -7px rgba(0, 0, 0, 0.21); }
+    @media (max-width: 576px) {
+      .sidebar .menu {
+        width: auto; } }
+    .sidebar .menu .logo h1 {
+      font-family: "Baloo Bhai 2", cursive;
+      font-size: 64px;
+      line-height: 102px;
+      color: #ffffff;
+      text-align: center;
+      padding: 30px 0; }
+    .sidebar .menu .nav-link {
+      padding: 0;
+      margin: 30px; }
+    .sidebar .menu .nav-link.exit {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: 40px;
+      text-align: center; }
+
+.header {
+  display: flex;
+  position: relative;
+  background: #F5F5F7;
+  border-radius: 14px;
+  width: auto;
+  height: 160px; }
+  .header-text {
+    margin: 50px 0 auto 30px; }
+    .header-text h5 {
+      font-family: "Baloo Bhai 2", cursive;
+      font-size: 36px;
+      margin-bottom: 0; }
+  .header-image img {
+    position: absolute;
+    bottom: 0;
+    right: 20%; }
+
+.course {
+  margin-top: 24px;
+  display: flex; }
+  .course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #F5F5F7;
+    border-radius: 14px;
+    padding: 8px 16px 8px 8px; }
+    .course-info-icon {
+      width: 64px;
+      height: 64px;
+      background-color: #ffffff;
+      border-radius: 12px; }
+      .course-info-icon img {
+        margin: 16px; }
+    .course-info-descr {
+      padding: 0 23px; }
+    .course-info-progress {
+      padding-right: 30px; }
+
+.active.carousel-item-left,
+.active.carousel-item-right {
+  position: absolute; }
+
+.carousel-control-prev-icon {
+  background-image: url(../images/icons/courses/back.svg); }
+
+.carousel-control-next-icon {
+  background-image: url(../images/icons/courses/forward.svg); }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 40px;
+  height: 40px; }
+
+.carousel-control-next {
+  right: -105px; }
+  @media (max-width: 1400px) {
+    .carousel-control-next {
+      right: 0;
+      bottom: -130px; } }
+
+.carousel-control-prev {
+  left: 455px; }
+  @media (max-width: 1400px) {
+    .carousel-control-prev {
+      left: 0px;
+      bottom: -130px; } }
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+  width: 13%; }
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    opacity: .5; }
+
+/********* Circle Pie ***********/
+.pie {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  background-color: #000000;
+  position: relative;
+  border: none;
+  margin: 0 auto; }
+  .pie:after {
+    display: none; }
+  .pie:after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    background: #F5F5F7;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center; }
+  .pie.p1 {
+    background-image: linear-gradient(93.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p1:after {
+      content: "1%"; }
+  .pie.p2 {
+    background-image: linear-gradient(97.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p2:after {
+      content: "2%"; }
+  .pie.p3 {
+    background-image: linear-gradient(100.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p3:after {
+      content: "3%"; }
+  .pie.p4 {
+    background-image: linear-gradient(104.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p4:after {
+      content: "4%"; }
+  .pie.p5 {
+    background-image: linear-gradient(108deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p5:after {
+      content: "5%"; }
+  .pie.p6 {
+    background-image: linear-gradient(111.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p6:after {
+      content: "6%"; }
+  .pie.p7 {
+    background-image: linear-gradient(115.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p7:after {
+      content: "7%"; }
+  .pie.p8 {
+    background-image: linear-gradient(118.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p8:after {
+      content: "8%"; }
+  .pie.p9 {
+    background-image: linear-gradient(122.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p9:after {
+      content: "9%"; }
+  .pie.p10 {
+    background-image: linear-gradient(126deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p10:after {
+      content: "10%"; }
+  .pie.p11 {
+    background-image: linear-gradient(129.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p11:after {
+      content: "11%"; }
+  .pie.p12 {
+    background-image: linear-gradient(133.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p12:after {
+      content: "12%"; }
+  .pie.p13 {
+    background-image: linear-gradient(136.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p13:after {
+      content: "13%"; }
+  .pie.p14 {
+    background-image: linear-gradient(140.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p14:after {
+      content: "14%"; }
+  .pie.p15 {
+    background-image: linear-gradient(144deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p15:after {
+      content: "15%"; }
+  .pie.p16 {
+    background-image: linear-gradient(147.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p16:after {
+      content: "16%"; }
+  .pie.p17 {
+    background-image: linear-gradient(151.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p17:after {
+      content: "17%"; }
+  .pie.p18 {
+    background-image: linear-gradient(154.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p18:after {
+      content: "18%"; }
+  .pie.p19 {
+    background-image: linear-gradient(158.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p19:after {
+      content: "19%"; }
+  .pie.p20 {
+    background-image: linear-gradient(162deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p20:after {
+      content: "20%"; }
+  .pie.p21 {
+    background-image: linear-gradient(165.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p21:after {
+      content: "21%"; }
+  .pie.p22 {
+    background-image: linear-gradient(169.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p22:after {
+      content: "22%"; }
+  .pie.p23 {
+    background-image: linear-gradient(172.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p23:after {
+      content: "23%"; }
+  .pie.p24 {
+    background-image: linear-gradient(176.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p24:after {
+      content: "24%"; }
+  .pie.p25 {
+    background-image: linear-gradient(180deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p25:after {
+      content: "25%"; }
+  .pie.p26 {
+    background-image: linear-gradient(183.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p26:after {
+      content: "26%"; }
+  .pie.p27 {
+    background-image: linear-gradient(187.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p27:after {
+      content: "27%"; }
+  .pie.p28 {
+    background-image: linear-gradient(190.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p28:after {
+      content: "28%"; }
+  .pie.p29 {
+    background-image: linear-gradient(194.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p29:after {
+      content: "29%"; }
+  .pie.p30 {
+    background-image: linear-gradient(198deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p30:after {
+      content: "30%"; }
+  .pie.p31 {
+    background-image: linear-gradient(201.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p31:after {
+      content: "31%"; }
+  .pie.p32 {
+    background-image: linear-gradient(205.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p32:after {
+      content: "32%"; }
+  .pie.p33 {
+    background-image: linear-gradient(208.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p33:after {
+      content: "33%"; }
+  .pie.p34 {
+    background-image: linear-gradient(212.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p34:after {
+      content: "34%"; }
+  .pie.p35 {
+    background-image: linear-gradient(216deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p35:after {
+      content: "35%"; }
+  .pie.p36 {
+    background-image: linear-gradient(219.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p36:after {
+      content: "36%"; }
+  .pie.p37 {
+    background-image: linear-gradient(223.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p37:after {
+      content: "37%"; }
+  .pie.p38 {
+    background-image: linear-gradient(226.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p38:after {
+      content: "38%"; }
+  .pie.p39 {
+    background-image: linear-gradient(230.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p39:after {
+      content: "39%"; }
+  .pie.p40 {
+    background-image: linear-gradient(234deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p40:after {
+      content: "40%"; }
+  .pie.p41 {
+    background-image: linear-gradient(237.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p41:after {
+      content: "41%"; }
+  .pie.p42 {
+    background-image: linear-gradient(241.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p42:after {
+      content: "42%"; }
+  .pie.p43 {
+    background-image: linear-gradient(244.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p43:after {
+      content: "43%"; }
+  .pie.p44 {
+    background-image: linear-gradient(248.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p44:after {
+      content: "44%"; }
+  .pie.p45 {
+    background-image: linear-gradient(252deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p45:after {
+      content: "45%"; }
+  .pie.p46 {
+    background-image: linear-gradient(255.6deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p46:after {
+      content: "46%"; }
+  .pie.p47 {
+    background-image: linear-gradient(259.2deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p47:after {
+      content: "47%"; }
+  .pie.p48 {
+    background-image: linear-gradient(262.8deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p48:after {
+      content: "48%"; }
+  .pie.p49 {
+    background-image: linear-gradient(266.4deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p49:after {
+      content: "49%"; }
+  .pie.p50 {
+    background-image: linear-gradient(270deg, transparent 50%, #F5F5F7 50%), linear-gradient(90deg, #F5F5F7 50%, transparent 50%); }
+    .pie.p50:after {
+      content: "50%"; }
+  .pie.p51 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-86.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p51:after {
+      content: "51%"; }
+  .pie.p52 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-82.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p52:after {
+      content: "52%"; }
+  .pie.p53 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-79.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p53:after {
+      content: "53%"; }
+  .pie.p54 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-75.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p54:after {
+      content: "54%"; }
+  .pie.p55 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-72deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p55:after {
+      content: "55%"; }
+  .pie.p56 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-68.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p56:after {
+      content: "56%"; }
+  .pie.p57 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-64.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p57:after {
+      content: "57%"; }
+  .pie.p58 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-61.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p58:after {
+      content: "58%"; }
+  .pie.p59 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-57.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p59:after {
+      content: "59%"; }
+  .pie.p60 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-54deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p60:after {
+      content: "60%"; }
+  .pie.p61 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-50.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p61:after {
+      content: "61%"; }
+  .pie.p62 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-46.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p62:after {
+      content: "62%"; }
+  .pie.p63 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-43.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p63:after {
+      content: "63%"; }
+  .pie.p64 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-39.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p64:after {
+      content: "64%"; }
+  .pie.p65 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-36deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p65:after {
+      content: "65%"; }
+  .pie.p66 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-32.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p66:after {
+      content: "66%"; }
+  .pie.p67 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-28.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p67:after {
+      content: "67%"; }
+  .pie.p68 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-25.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p68:after {
+      content: "68%"; }
+  .pie.p69 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-21.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p69:after {
+      content: "69%"; }
+  .pie.p70 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-18deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p70:after {
+      content: "70%"; }
+  .pie.p71 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-14.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p71:after {
+      content: "71%"; }
+  .pie.p72 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-10.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p72:after {
+      content: "72%"; }
+  .pie.p73 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-7.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p73:after {
+      content: "73%"; }
+  .pie.p74 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(-3.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p74:after {
+      content: "74%"; }
+  .pie.p75 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(0deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p75:after {
+      content: "75%"; }
+  .pie.p76 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(3.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p76:after {
+      content: "76%"; }
+  .pie.p77 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(7.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p77:after {
+      content: "77%"; }
+  .pie.p78 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(10.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p78:after {
+      content: "78%"; }
+  .pie.p79 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(14.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p79:after {
+      content: "79%"; }
+  .pie.p80 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(18deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p80:after {
+      content: "80%"; }
+  .pie.p81 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(21.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p81:after {
+      content: "81%"; }
+  .pie.p82 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(25.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p82:after {
+      content: "82%"; }
+  .pie.p83 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(28.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p83:after {
+      content: "83%"; }
+  .pie.p84 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(32.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p84:after {
+      content: "84%"; }
+  .pie.p85 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(36deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p85:after {
+      content: "85%"; }
+  .pie.p86 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(39.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p86:after {
+      content: "86%"; }
+  .pie.p87 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(43.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p87:after {
+      content: "87%"; }
+  .pie.p88 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(46.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p88:after {
+      content: "88%"; }
+  .pie.p89 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(50.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p89:after {
+      content: "89%"; }
+  .pie.p90 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(54deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p90:after {
+      content: "90%"; }
+  .pie.p91 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(57.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p91:after {
+      content: "91%"; }
+  .pie.p92 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(61.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p92:after {
+      content: "92%"; }
+  .pie.p93 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(64.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p93:after {
+      content: "93%"; }
+  .pie.p94 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(68.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p94:after {
+      content: "94%"; }
+  .pie.p95 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(72deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p95:after {
+      content: "95%"; }
+  .pie.p96 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(75.6deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p96:after {
+      content: "96%"; }
+  .pie.p97 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(79.2deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p97:after {
+      content: "97%"; }
+  .pie.p98 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(82.8deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p98:after {
+      content: "98%"; }
+  .pie.p99 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(86.4deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p99:after {
+      content: "99%"; }
+  .pie.p100 {
+    background-image: linear-gradient(90deg, transparent 50%, #000000 50%), linear-gradient(90deg, transparent 50%, #F5F5F7 50%); }
+    .pie.p100:after {
+      content: "100%"; }
+
+/********* End Circle Pie ***********/
+.courses-list {
+  margin-top: 90px;
+  padding-left: 0;
+  padding-right: 0; }
+  .courses-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 80px;
+    background-color: #F5F5F7;
+    border-radius: 14px;
+    padding: 8px 16px 8px 8px;
+    margin-bottom: 17px; }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      .courses-list-item {
+        flex-direction: column;
+        height: auto;
+        text-align: center; } }
+    .courses-list-item-icon {
+      width: 64px;
+      height: 64px;
+      background-color: #ffffff;
+      border-radius: 12px; }
+      .courses-list-item-icon img {
+        margin: 16px; }
+    .courses-list-item-duration {
+      display: flex; }
+    .courses-list-item-rating {
+      display: flex; }
+
+.navigation {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center; }
+  .navigation-input {
+    position: relative; }
+    .navigation-input input {
+      width: auto;
+      height: 40px;
+      background-color: #F5F5F7;
+      border: none;
+      border-radius: 8px;
+      margin-right: 30px;
+      padding-left: 30px; }
+    .navigation-input .search {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 10px;
+      left: 20px; }
+  .navigation-notification {
+    position: relative; }
+    .navigation-notification .counter {
+      position: absolute;
+      right: -5px;
+      bottom: 15px;
+      display: inline-block;
+      background-color: #f45b5b;
+      width: 14px;
+      height: 14px;
+      padding: 4px;
+      border-radius: 50%;
+      font-size: 10px;
+      line-height: 7px;
+      color: #ffffff; }
+  .navigation-profile {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 0; }
+  .navigation .dropdown {
+    display: flex;
+    position: relative;
+    margin-left: 8px;
+    margin-top: 4px; }
+  .navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1; }
+    .navigation .dropdown-content a {
+      color: #000000;
+      display: block; }
+      .navigation .dropdown-content a:hover {
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 8px; }
+  .navigation .dropdown:hover .dropdown-content {
+    display: block; }
+  .navigation .arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px; }
+  .navigation .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+
+.statistic {
+  display: flex;
+  margin-top: 24px; }
+  .statistic-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    padding: 30px 35px;
+    margin-right: 10px;
+    background-color: #F5F5F7;
+    border-radius: 14px; }
+    .statistic-block-number {
+      font-family: "Baloo Bhai 2", cursive;
+      font-size: 64px;
+      margin-right: 15px; }
+    .statistic-block-text {
+      font-size: 16px; }
+
+.your-statistic {
+  margin-top: 50px; }
+  .your-statistic-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+    .your-statistic-wrapper .period {
+      width: 88px;
+      height: 32px;
+      font-size: 13px;
+      border: none;
+      border-radius: 8px;
+      text-align-last: center; }
+      .your-statistic-wrapper .period:focus {
+        outline: none; }
+  .your-statistic .graphic {
+    margin-top: 30px; }
+
+.premium {
+  display: flex;
+  margin-top: 70px;
+  height: 193px;
+  background-color: #F5F5F7;
+  border-radius: 14px; }
+  .premium-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 25px 20px; }
+  .premium-img {
+    padding: 35px 35px 15px; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+p {
+  margin-block-end: 0; }
+
+h2 {
+  margin-bottom: 0; }
+
+.row {
+  margin: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.wrapper-column {
+  margin-top: 55px; }
+  @media (max-width: 1199px) {
+    .wrapper-column.second {
+      margin-bottom: 50px; } }

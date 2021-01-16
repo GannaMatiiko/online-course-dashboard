@@ -1,0 +1,36 @@
+.courses-list {
+    margin-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height: 80px;
+        background-color: $grey;
+        border-radius: $brad-size;
+        padding: 8px 16px 8px 8px;
+        margin-bottom: 17px;
+        @media (min-width: 1200px) and (max-width: 1400px) {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+        &-icon {
+            width: 64px;
+            height: 64px;
+            background-color: $white;
+            border-radius: 12px;
+            img {
+                margin: 16px;
+            }
+        }
+        &-duration {
+            display: flex;
+        }
+        &-rating {
+            display: flex;
+        }
+    }
+}
